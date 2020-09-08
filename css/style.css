@@ -10,6 +10,14 @@ header {
   background-color: #757575;
 }
 
+nav ul li a,
+.main-items h1,
+.fa-long-arrow-right,
+.icon-image,
+.icon-image button {
+  color: #fff;
+}
+
 /* navbar */
 
 #logo {
@@ -56,7 +64,6 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #fff;
 }
 
 #search {
@@ -76,42 +83,6 @@ nav ul li a {
   flex-wrap: wrap;
 
 } 
-
-/*.main-content {
-  display: flex;
-  justify-content: center;
-}
-
-.main-heading {
-  background-color: #fff;
-  color: #000;
-  line-height: 1.5em;
-  text-align: center;
-  padding: .3em .4em;
-  letter-spacing: -1px;
-  font-size: 1.625em;
-} */
-
-/* .gray {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  top: -10px;
-  left: 300px;
-}
-
-.logo-image {
-  width: 50px;
-  height: 50px;
-  background-color: #fff;
-  margin-top: 30px;
-}
-
-.gray button {
-  height: 30px;
-  margin-top: 40px;
-  border-radius: 10px;
-} */
 
 .featured-articles {
   display: grid;
@@ -148,14 +119,13 @@ nav ul li a {
 .main-items h1 {
   font-size: 40px;
   font-family: "Nunito Sans", sans-serif;
-  color: #fff;
   margin: 20px auto;
   text-align: justify;
   width: 80%;
 }
 
 .person-logo {
-  width: 90px;
+  width: 87px;
   height: 96px;
   margin-top: 175px;
   margin-left: 50px;
@@ -163,7 +133,8 @@ nav ul li a {
   transform: rotate(-15deg);
 }
 
-.person-logo:hover {
+.person-logo,
+.logo-image:hover {
   transform: rotate(1deg);
 }
 
@@ -173,5 +144,50 @@ nav ul li a {
 
 .fa-long-arrow-right {
   margin: 100px auto auto 50px;
-  color: #fff;
+}
+
+.heading-section {
+  display: flex;
+  position: absolute;
+  top: 35px;
+  left: 35%;
+}
+
+.heading-section h2 {
+  font-size: 38px;
+  text-align: center;
+  line-height: 1;
+}
+
+.heading-section span {
+  background-color: #fff;
+}
+
+.icon-image {
+  display: flex;
+  margin-left: 200px;
+}
+
+.logo-image {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  margin-top: 30px;
+  border-radius: 12px;
+  transform: rotate(-15deg);
+}
+
+.icon-image button {
+  height: 36px;
+  width: 150px;
+  margin-top: 35px;
+  margin-left: 10px;
+  border-radius: 10px;
+  background-color: #757575;
+  font-size: 15px;
+}
+
+.icon-image button:hover {
+  background-color: #fff;
+  color: #757575;
 }

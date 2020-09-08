@@ -10,6 +10,8 @@ header {
   background-color: #757575;
 }
 
+/* navbar */
+
 #logo {
   width: 190px;
   height: 90px; 
@@ -65,3 +67,72 @@ nav ul li a {
   padding-left: 10px;
 }
 
+/* main */
+
+/* .section-heading {
+  background-color: #757575;
+} */
+
+.main-content {
+  display: flex;
+  justify-content: center;
+}
+
+.main-heading {
+  background-color: #fff;
+  color: #000;
+  line-height: 1.5em;
+  text-align: center;
+  padding: .3em .4em;
+  letter-spacing: -1px;
+  font-size: 1.625em;
+}
+
+.gray {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: -10px;
+  left: 300px;
+}
+
+.logo-image {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  margin-top: 30px;
+}
+
+.gray button {
+  height: 30px;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+
+.featured-articles {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+}
+
+.featured-article1,
+.featured-article2,
+.featured-article3,
+.featured-article4 {
+  height: 90vh;
+}
+
+.featured-article1 {
+  background-color: #aaa5a5;
+}
+
+.featured-article2 {
+  background-color: #c2b9b9;
+}
+
+.featured-article3 {
+  background-color: #867e7e;
+}
+
+.featured-article4 {
+  background-color: #666363;
+}

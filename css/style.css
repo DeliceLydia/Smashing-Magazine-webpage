@@ -6,15 +6,30 @@ body {
   background-color: #f5f5f5;
 }
 
-header {
+header,
+.icon-image button,
+.friends button,
+.barista {
   background-color: #757575;
+}
+
+nav ul li a {
+  text-decoration: none;
 }
 
 nav ul li a,
 .main-items h1,
 .fa-long-arrow-right,
 .icon-image,
-.icon-image button {
+.icon-image button,
+.friends button,
+.barista,
+.barista a, 
+.shipping h3,
+.shipping h1,
+.shipping p,
+.featured-smashing-book h3,
+.featured-smashing-book h2 {
   color: #fff;
 }
 
@@ -26,11 +41,11 @@ nav ul li a,
 }
 
 nav ul {
- display: flex;
- flex-direction: row;
- align-items: center;
- justify-content: space-between;
- margin: 0 20px 0 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 20px 0 0;
 }
 
 .nav-items-link,
@@ -55,22 +70,25 @@ nav ul {
   text-align: center;
   padding: 17px 2px 0 2px;
   border-radius: 10px;
-  
 }
 
 nav ul li {
   list-style: none;
 }
 
-nav ul li a {
-  text-decoration: none;
+#search,
+.barista button,
+.shipping button,
+.person-week h3,
+.community-par p,
+.icon-image button:hover {
+  color: #757575;
 }
 
 #search {
   width: 280px;
   height: 40px;
   border-radius: 11px;
-  color: #757575;
   padding-left: 10px;
 }
 
@@ -81,7 +99,6 @@ nav ul li a {
   display: flex;
   position: relative;
   flex-wrap: wrap;
-
 } 
 
 .featured-articles {
@@ -133,8 +150,24 @@ nav ul li a {
   transform: rotate(-15deg);
 }
 
+.logo-image,
+.heading-section span,
+.barista button  {
+  background-color: #fff;
+}
+
+.logo-image {
+  width: 50px;
+  height: 50px;
+  margin-top: 30px;
+  border-radius: 12px;
+  transform: rotate(-15deg);
+}
+
 .person-logo:hover,
-.logo-image:hover {
+.logo-image:hover,
+.img-of-person:hover,
+.community-img:hover {
   transform: rotate(0deg);
 }
 
@@ -153,14 +186,11 @@ nav ul li a {
   left: 35%;
 }
 
-.heading-section h2 {
+.heading-section h2,
+.featured-smashing-book h2 {
   font-size: 38px;
   text-align: center;
   line-height: 1;
-}
-
-.heading-section span {
-  background-color: #fff;
 }
 
 .icon-image {
@@ -168,13 +198,21 @@ nav ul li a {
   margin-left: 200px;
 }
 
-.logo-image {
-  width: 50px;
-  height: 50px;
-  background-color: #fff;
-  margin-top: 30px;
-  border-radius: 12px;
-  transform: rotate(-15deg);
+.friends button {
+  height: 36px;
+  width: 120px;
+  margin-top: 5px;
+  margin-left: 10px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.barista button,
+.shipping button {
+  height: 38px;
+  width: 200px;
+  margin-top: 18px;
+  border-radius: 10px;
 }
 
 .icon-image button {
@@ -183,13 +221,11 @@ nav ul li a {
   margin-top: 35px;
   margin-left: 10px;
   border-radius: 10px;
-  background-color: #757575;
   font-size: 15px;
 }
 
 .icon-image button:hover {
   background-color: #fff;
-  color: #757575;
 }
 
 /* latest post section */
@@ -198,6 +234,7 @@ nav ul li a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
+  margin-top: 10px;
   margin-left: 35px;
 }
 
@@ -211,16 +248,21 @@ nav ul li a {
 }
 
 h5,
+.featured-latest-post span,
+.featured-latest-post p,
+.see-all,
+.person-week p {
+  color: #666; 
+}
+
+h5,
 .featured-latest-post span {
-  color: #666;
   font-weight: 700;
-  font-size: .9em;
+  font-size: 0.9em;
 }
 
 .featured-latest-post p {
   font-size: 20px;
-  color: #666;
-  
 }
 
 /* friends and supporters */
@@ -228,7 +270,6 @@ h5,
 .friends-section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-
 }
 
 .friends {
@@ -238,16 +279,6 @@ h5,
   text-align: center;
 }
 
-.friends button {
-  height: 36px;
-  width: 120px;
-  margin-top: 5px;
-  margin-left: 10px;
-  border-radius: 5px;
-  font-size: 12px;
-  color: #fff;
-}
-
 .barista {
   height: 90vh;
   width: 55vw;
@@ -255,15 +286,10 @@ h5,
   margin-right: 50px;
   margin-top: 100px;
   text-align: center;
-  color: #fff;
 }
 
-.friends button,
-.barista {
-  background-color: #757575;
-}
-
-.barista h1 {
+.barista h1,
+.shipping h1{
   font-size: 3em;
 }
 
@@ -274,20 +300,132 @@ h5,
   font-weight: 400;
 }
 
-.barista a {
-  color: #fff;
-}
-
-.barista button {
-  height: 38px;
-  width: 200px;
-  margin-top: 18px;
-  border-radius: 10px;
-  background-color: #fff;
-  color:#757575;
-}
-
 .barista .small-text {
   font-size: 16px;
   margin-top: 13px;
 }
+
+#smashing {
+  width: 70%;
+  margin-top: 70px;
+  margin-left: 70px;
+}
+
+ #smashing p {
+  margin-bottom: 300px;
+}
+
+.cat-smashing {
+  height: 97vh;
+  width: 60vw;
+}
+
+.see-all {
+  margin-left: 200px;
+} 
+
+/* shipping */
+
+.shipping {
+  text-align: center;
+  margin-top: 50px; 
+  background-color: #858181;
+}
+
+.shipping h3 {
+  position: relative;
+  top: 50px;
+}
+
+.shipping h1 {
+  width: 60%;
+  margin: 70px auto 23px auto;
+}
+
+.shipping p {
+  width: 59%;
+  font-size: 25px;
+  margin: auto auto 50px auto;
+}
+
+.shipping button {
+  height: 70px;
+  width: 350px;
+  font-size: 20px;
+}
+
+/* community */
+
+.person-of-the-week {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* background-color: beige; */
+  margin-top: 30px;
+}
+
+.img-of-person .person-logo {
+  width: 250px;
+  height: 220px;
+  margin-top: 40px;
+}
+
+.person-week p {
+  font-size: 20px;
+  margin-right: 100px;
+  letter-spacing: 1;
+  line-height: 1.5;
+}
+
+.community-container {
+  display: grid;
+  grid-template-columns: repeat(2, 3fr);
+}
+
+.community-persons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.community-img {
+  margin-left: 60px;
+  transform: rotate(-15deg);
+}
+
+.community-par {
+  margin-left: -40%;
+}
+
+.community-par span {
+  color: #5c5858;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.community-par h2 {
+  font-size: 25px;
+  font-weight: 800;
+  margin-top: 13px;
+}
+
+.community-par p {
+  font-size: 20px;
+}
+
+/* smashing book */
+
+.featured-smashing-book {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: #bdb9b9;
+}
+
+.smashing-book {
+  margin-right: 30px;
+}
+
+.featured-smashing-book .smashing-par p {
+  text-align: center;
+}
+
+
+

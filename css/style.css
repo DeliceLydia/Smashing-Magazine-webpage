@@ -17,14 +17,27 @@ nav ul li a {
   text-decoration: none;
 }
 
+footer h3 {
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  font-size: 1.235em;
+}
+
 nav ul li a,
 .main-items h1,
 .fa-long-arrow-right,
 .icon-image,
 .icon-image button,
 .friends button,
+footer ul li a,
 .barista,
-.barista a, 
+.barista a,
+footer h3,
 .shipping h3,
 .shipping h1,
 .shipping p,
@@ -33,10 +46,8 @@ nav ul li a,
 .smashing-par p,
 .our-guide article,
 .submit,
-footer h3,
-footer ul li a,
 .footer-bottom,
-.footer-bottom a  {
+.footer-bottom a {
   color: #fff;
 }
 
@@ -44,7 +55,7 @@ footer ul li a,
 
 #logo {
   width: 190px;
-  height: 90px; 
+  height: 90px;
 }
 
 nav ul {
@@ -83,6 +94,38 @@ nav ul li {
   list-style: none;
 }
 
+.friends button {
+  height: 36px;
+  width: 120px;
+  margin-top: 5px;
+  margin-left: 10px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.barista button,
+.button {
+  height: 38px;
+  width: 200px;
+  margin-top: 18px;
+  border-radius: 10px;
+}
+
+.logo-image,
+.heading-section span,
+.barista button {
+  background-color: #fff;
+}
+
+.icon-image button {
+  height: 36px;
+  width: 150px;
+  margin-top: 35px;
+  margin-left: 10px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
 #search,
 .barista button,
 .button,
@@ -106,7 +149,7 @@ nav ul li {
   display: flex;
   position: relative;
   flex-wrap: wrap;
-} 
+}
 
 .featured-articles {
   display: grid;
@@ -157,17 +200,22 @@ nav ul li {
   transform: rotate(-15deg);
 }
 
-.logo-image,
-.heading-section span,
-.barista button  {
-  background-color: #fff;
-}
-
 .logo-image {
   width: 50px;
   height: 50px;
   margin-top: 30px;
   border-radius: 12px;
+  transform: rotate(-15deg);
+}
+
+.smashing-book {
+  margin-right: 90px;
+  margin-bottom: 60px;
+  transform: rotate(-16deg);
+}
+
+.community-img {
+  margin-left: 60px;
   transform: rotate(-15deg);
 }
 
@@ -206,32 +254,6 @@ nav ul li {
   margin-left: 200px;
 }
 
-.friends button {
-  height: 36px;
-  width: 120px;
-  margin-top: 5px;
-  margin-left: 10px;
-  border-radius: 5px;
-  font-size: 12px;
-}
-
-.barista button,
-.button {
-  height: 38px;
-  width: 200px;
-  margin-top: 18px;
-  border-radius: 10px;
-}
-
-.icon-image button {
-  height: 36px;
-  width: 150px;
-  margin-top: 35px;
-  margin-left: 10px;
-  border-radius: 10px;
-  font-size: 15px;
-}
-
 .icon-image button:hover {
   background-color: #fff;
 }
@@ -261,7 +283,7 @@ h5,
 .see-all,
 .person-week p,
 .see-all-guide {
-  color: #666; 
+  color: #666;
 }
 
 h5,
@@ -298,7 +320,7 @@ h5,
 }
 
 .barista h1,
-.shipping h1{
+.shipping h1 {
   font-size: 3em;
 }
 
@@ -314,13 +336,33 @@ h5,
   margin-top: 13px;
 }
 
+.our-guide p {
+  font-size: 1.125em;
+}
+
 #smashing {
   width: 70%;
   margin-top: 70px;
   margin-left: 70px;
 }
 
- #smashing p {
+.community-par p {
+  font-size: 20px;
+}
+
+.person-week p {
+  font-size: 20px;
+  margin-right: 100px;
+  line-height: 1.5;
+}
+
+.shipping p {
+  width: 59%;
+  font-size: 25px;
+  margin: auto auto 50px auto;
+}
+
+#smashing p {
   margin-bottom: 300px;
 }
 
@@ -332,13 +374,13 @@ h5,
 .see-all,
 .see-all-guide {
   margin-left: 200px;
-} 
+}
 
 /* shipping */
 
 .shipping {
   text-align: center;
-  margin-top: 50px; 
+  margin-top: 50px;
   background-color: #858181;
 }
 
@@ -350,12 +392,6 @@ h5,
 .shipping h1 {
   width: 60%;
   margin: 70px auto 23px auto;
-}
-
-.shipping p {
-  width: 59%;
-  font-size: 25px;
-  margin: auto auto 50px auto;
 }
 
 .button {
@@ -378,13 +414,6 @@ h5,
   margin-top: 40px;
 }
 
-.person-week p {
-  font-size: 20px;
-  margin-right: 100px;
-  letter-spacing: 1;
-  line-height: 1.5;
-}
-
 .community-container {
   display: grid;
   grid-template-columns: repeat(2, 3fr);
@@ -393,11 +422,6 @@ h5,
 .community-persons {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-}
-
-.community-img {
-  margin-left: 60px;
-  transform: rotate(-15deg);
 }
 
 .community-par {
@@ -416,10 +440,6 @@ h5,
   margin-top: 13px;
 }
 
-.community-par p {
-  font-size: 20px;
-}
-
 /* smashing book */
 
 .featured-smashing-book {
@@ -427,12 +447,6 @@ h5,
   flex-direction: row-reverse;
   background-color: #7e7676;
   height: 60vh;
-}
-
-.smashing-book {
-  margin-right: 90px;
-  margin-bottom: 60px;
-  transform: rotate(-16deg);
 }
 
 .smashing-par {
@@ -462,7 +476,7 @@ h5,
 .our-guide {
   display: grid;
   grid-template-columns: repeat(2, 2fr);
-  width: 80% ;
+  width: 80%;
   margin-top: 50px;
   margin-left: 15%;
 }
@@ -482,10 +496,6 @@ h5,
 
 .our-guide h2 {
   font-size: 40px;
-}
-
-.our-guide p {
-  font-size: 1.125em;
 }
 
 .input-field {
@@ -523,12 +533,6 @@ footer {
   height: 80vh;
 }
 
-footer h3 {
-  text-align: center;
-  padding-top: 60px;
-  padding-bottom: 20px;
-}
-
 .footer-links ul {
   display: grid;
   grid-template-columns: repeat(10, 4fr);
@@ -541,22 +545,13 @@ footer h3 {
   line-height: 1.8;
 }
 
-footer ul li a {
-  text-decoration: none;
-  font-size: 1.235em;
-}
-
 .footer-bottom {
   text-align: center;
   margin-top: 60px;
   line-height: 0.8;
 }
 
-.footer-bottom-links {
-  /* width: 50%; */
-}
-
-.footer-bottom-links ul{
+.footer-bottom-links ul {
   display: flex;
   justify-content: center;
   list-style: none;
@@ -568,7 +563,3 @@ footer ul li a {
   margin-right: 25px;
   text-decoration: underline;
 }
-
-
-
-

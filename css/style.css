@@ -109,13 +109,7 @@ nav ul li {
   width: 200px;
   margin-top: 18px;
   border-radius: 10px;
-}
-
-.logo-image,
-.heading-section span,
-.barista button,
-.icon-image button:hover {
-  background-color: #fff;
+  color: #757575;
 }
 
 .icon-image button {
@@ -127,8 +121,14 @@ nav ul li {
   font-size: 15px;
 }
 
-#search,
+.logo-image,
+.heading-section span,
 .barista button,
+.icon-image button:hover {
+  background-color: #fff;
+}
+
+#search,
 .button,
 .person-week h3,
 .community-par p,
